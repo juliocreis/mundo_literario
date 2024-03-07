@@ -5,14 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Literário</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="cabecalho">
-        <div class="container">
-            <span class="cabecalho__menu-hamburguer container__imagem"></span>
+        <div class="container"> <!-- Essa div foi utilizada para dividir os ícones do header para esquerda e direita -->
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span> <!-- Span utilizado para criar o hamburguer como background-image no header.css -->
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+            </ul>
         </div>
-        <div class="container">
+        <div class="container"> <!-- Div criada para adicionar os ícones do cabeçalho-->
             <a href="#"><img src="./imagens/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
             <a href="#"><img src="./imagens/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
             <a href="#"><img src="./imagens/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>

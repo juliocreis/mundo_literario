@@ -3,6 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
 }
 
 .cabecalho__menu-hamburguer {
@@ -11,14 +17,44 @@
     background-image: url(../imagens/Menu.svg);
     background-repeat: no-repeat;
     background-position: center;
-    display: inline-block;
-}
-
-.container {
-    display: flex;
-    align-items: center;
+    display: inline-block; /* inline-block para poder alterar a largura e altura do cabeçalho */
 }
 
 .container__imagem {
     padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+    top: 100%;
+    position: absolute;
+    width: 60vw;
+}
+
+.container__botao:checked~.lista-menu{ /* Se o botão for selecionado, mostre a lista */
+    /* O símbolo "~" é utilizado para selecionar todos os elementos "irmãos", ou seja, elementos que são filhos de um mesmo pai, nesse caso são os elementos da lista */
+    display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista-menu__link {
+    background: var(--azul-degrade);
+    text-transform: uppercase; /* Letras maiúsculas */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.container__botao {
+    display: none
 }
