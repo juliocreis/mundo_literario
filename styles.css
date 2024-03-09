@@ -1,4 +1,5 @@
 @import url(./styles/header.css); /* O @import serve para importar um arquivo CSS dentro de outro arquivo CSS */
+@import url(./styles/banner.css);
 
 :root {
     --cor-de-fundo: #EBECEE;
