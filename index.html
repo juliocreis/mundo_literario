@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -47,5 +48,49 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para o seu desenvolvimento</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos lançamentos</h2>
+            <!-- Slider main container -->
+        <div class="swiper">
+             <!-- If we need pagination -->
+             <div class="swiper-pagination"></div>
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper"> <!-- Swiper é uma biblioteca JavaScript popular para criar sliders (ou carrosséis) de imagens, vídeos e outros conteúdos em páginas web de forma responsiva -->
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./imagens/ApacheKafka.svg" alt="Livro sobre Apache Kafka e Spring Boot"></div>
+                <div class="swiper-slide"><img src="./imagens/Lideranc╠ºa.svg" alt="Livro sobre liderança em design"></div>
+                <div class="swiper-slide"><img src="./imagens/Javascript.svg" alt="Livro sobre JavaScript"></div>
+                <div class="swiper-slide"><img src="./imagens/Guia Front-end.svg" alt="Livro sobre Front-end"></div>
+                <div class="swiper-slide"><img src="./imagens/Portugol.svg" alt="Livro sobre Portugol"></div>
+                <div class="swiper-slide"><img src="./imagens/Acessibilidade.svg" alt="Livro sobre acessibilidade"></div>
+                <div class="swiper-slide"><img src="./imagens/Tuning.svg" alt="Livro sobre Tuning de SQL"></div>
+                <div class="swiper-slide"><img src="./imagens/Arquitetura.svg" alt="Livro sobre arquitetura de software distribuído"></div>
+                <div class="swiper-slide"><img src="./imagens/Nodejs.svg" alt="Livro sobre Nodejs"></div>
+                <div class="swiper-slide"><img src="./imagens/ReactNative.svg" alt="Livro sobre ReactNative"></div>
+                <div class="swiper-slide"><img src="./imagens/Gestão2.svg" alt="Livro sobre gestão de produtos"></div>
+                <div class="swiper-slide"><img src="./imagens/MetricasAgeis.svg" alt="Livro sobre métricas ágeis"></div>
+                <div class="swiper-slide"><img src="./imagens/Construct2.svg" alt="Livro sobre Construct 2"></div>
+                <div class="swiper-slide"><img src="./imagens/UX.svg" alt="Livro sobre UX"></div>
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    });
+    </script>
 </body>
 </html>
