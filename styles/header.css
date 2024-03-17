@@ -20,6 +20,7 @@
     display: inline-block; /* inline-block para poder alterar a largura e altura do cabeçalho */
 }
 
+
 .container__imagem {
     padding: 1em;
 }
@@ -55,17 +56,10 @@
     background-clip: text;
 }
 
-.container__botao {
-    display: none
-}
-
-.container__titulo {
+.container__texto, .container__botao,  .container__titulo, .opcoes {
     display: none;
 }
 
-.opcoes{
-    display: none;
-}
 
 @media screen and (min-width: 1024px){ /* "min-width" pois a técnica que está sendo utilizada é o mobile first, se fosse desktop first seria "max-width" */
     .container__titulo, .container__titulo--negrito {
@@ -112,5 +106,26 @@
 
     .opcoes__botao {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .container__texto {
+        display: block;
+    }
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .opcoes {
+        margin-right: auto;
     }
 }
