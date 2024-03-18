@@ -10,7 +10,7 @@ Mundo Literário é uma interface de site de livros criada com base em um design
 
 ## Visualizando o Projeto
 
-<iframe src="https://https://juliocreis.github.io/mundo_literario/" width="100%" height="600px"></iframe>
+<iframe src="https://juliocreis.github.io/mundo_literario/" width="100%" height="600px"></iframe>
 
 ## Estrutura do Projeto
 
