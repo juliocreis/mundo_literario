@@ -1,18 +1,18 @@
-# Mundo Literário
+# Mundo Literário 📚
 
 Mundo Literário é uma interface de site de livros criada com base em um design do Figma, utilizando HTML, CSS e a biblioteca JavaScript Swiper para criar carrosséis.
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas 🧑🏽‍💻
 
 - **HTML:** Utilizado para a estruturação do conteúdo do site.
 - **CSS:** Utilizado para a estilização e o design do site.
 - **JavaScript (Swiper):** Utilizado para a criação de carrosséis interativos de livros.
 
-## Visualizando o Projeto
+## Visualizando o Projeto 🫣
 
-Clique [aqui](https://juliocreis.github.io/mundo_literario/) para visualizar o site Mundo Literário em ação.
+Clique [aqui](https://juliocreis.github.io/mundo_literario/) para visualizar o site.
 
-## Estrutura do Projeto
+## Estrutura do Projeto 🖥️
 
 O projeto está estruturado da seguinte forma:
 
@@ -28,6 +28,6 @@ O projeto está estruturado da seguinte forma:
 - `contato.css`: Arquivo de estilo para a section contendo as informações para contato.
 - `rodape.css`: Arquivo de estilo para o footer do site.
 
-## Como Contribuir
+## Como Contribuir 📶
 
 Contribuições são bem-vindas! Sinta-se à vontade para enviar sugestões ou novos recursos para o projeto.
